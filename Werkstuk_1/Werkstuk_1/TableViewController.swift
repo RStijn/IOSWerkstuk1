@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import CoreLocation
 class TableViewController: UITableViewController {
 
     var personenlijst = [Persoon]()
@@ -22,9 +22,29 @@ class TableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
         //var adres = Adres(straat: "viooltjeslaan", huisnummer: "8", )
-        let adres = Adres(straat: "Viooltjeslaan", huisnummer: "8", postcode: "1770", gemeente: "Liedekerke")
-        let persoon = Persoon(naam: "Rooselaers", voornaam: "Stijn", foto: #imageLiteral(resourceName: "stijn")  , adres: adres, gpsLat: 50.8503463, gpsLong: 4.351721099999963, telefoon: "0478813696")
-        self.personenlijst = [persoon]
+        let adres1 = Adres(straat: "Viooltjeslaan", huisnummer: "8", postcode: "1770", gemeente: "Liedekerke")
+         let coo1 = CLLocationCoordinate2D(latitude: 50.844226, longitude: 4.327051)
+        let persoon1 = Persoon(naam: "Rooselaers", voornaam: "Stijn", foto: #imageLiteral(resourceName: "Stijn")  , adres: adres1, coordinate: coo1, telefoon: "0478813696")
+        
+        let adres2 = Adres(straat: "Poelkveldstraat", huisnummer: "50", postcode: "1761", gemeente: "Pamel")
+        let coo2 = CLLocationCoordinate2D(latitude: 50.826118, longitude: 4.073781)
+        let persoon2 = Persoon(naam: "Mostinckx", voornaam: "Niels", foto: #imageLiteral(resourceName: "Niels")  , adres: adres2, coordinate: coo2, telefoon: "1234567890")
+        let adres3 = Adres(straat: "Ergens in Eizeringen straat", huisnummer: "0", postcode: "idk de postcode,", gemeente: "Eizeringen")
+        let coo3 = CLLocationCoordinate2D(latitude: 50.828771, longitude: 4.123909)
+        let persoon3 = Persoon(naam: "Delcourt", voornaam: "Rhune", foto: #imageLiteral(resourceName: "Rhune")  , adres: adres3, coordinate: coo3, telefoon: "1234567890")
+        let adres4 = Adres(straat: "Ergens tussen de appeltjes", huisnummer: "0", postcode: "idk de postcode,", gemeente: "Eizeringen")
+        let coo4 = CLLocationCoordinate2D(latitude: 50.828771, longitude: 4.123909)
+        let persoon4 = Persoon(naam: "Van Der Meulen", voornaam: "Myrthe", foto: #imageLiteral(resourceName: "Myrthe")  , adres: adres4, coordinate: coo4, telefoon: "1234567890")
+        let adres5 = Adres(straat: "Ergens in een straat aan de steenweg", huisnummer: "0", postcode: "idk de postcode,", gemeente: "Lennik")
+        let coo5 = CLLocationCoordinate2D(latitude: 50.828771, longitude: 4.123909)
+        let persoon5 = Persoon(naam: "Bettens", voornaam: "Daria", foto: #imageLiteral(resourceName: "Daria")  , adres: adres5, coordinate: coo5, telefoon: "1234567890")
+        
+        
+        self.personenlijst += [persoon1]
+        self.personenlijst += [persoon2]
+        self.personenlijst += [persoon3]
+        self.personenlijst += [persoon4]
+        self.personenlijst += [persoon5]
         
     }
 

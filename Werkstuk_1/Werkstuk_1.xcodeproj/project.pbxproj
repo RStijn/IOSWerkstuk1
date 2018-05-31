@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D19ABEC20C07F770009BECB /* ViewControllerfoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19ABEB20C07F770009BECB /* ViewControllerfoto.swift */; };
 		8DC263AB20BFE11900CE34C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC263AA20BFE11900CE34C6 /* AppDelegate.swift */; };
 		8DC263AD20BFE11900CE34C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC263AC20BFE11900CE34C6 /* ViewController.swift */; };
 		8DC263B020BFE11900CE34C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DC263AE20BFE11900CE34C6 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D19ABEB20C07F770009BECB /* ViewControllerfoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerfoto.swift; sourceTree = "<group>"; };
 		8DC263A720BFE11900CE34C6 /* Werkstuk_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Werkstuk_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC263AA20BFE11900CE34C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DC263AC20BFE11900CE34C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				8DC263D820BFE27D00CE34C6 /* Persoon.swift */,
 				8DC263B620BFE11C00CE34C6 /* Info.plist */,
 				8DC263DE20BFE72D00CE34C6 /* TableViewController.swift */,
+				8D19ABEB20C07F770009BECB /* ViewControllerfoto.swift */,
 			);
 			path = Werkstuk_1;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				8DC263AD20BFE11900CE34C6 /* ViewController.swift in Sources */,
 				8DC263DB20BFE30000CE34C6 /* Adres.swift in Sources */,
+				8D19ABEC20C07F770009BECB /* ViewControllerfoto.swift in Sources */,
 				8DC263AB20BFE11900CE34C6 /* AppDelegate.swift in Sources */,
 				8DC263DF20BFE72D00CE34C6 /* TableViewController.swift in Sources */,
 				8DC263D920BFE27D00CE34C6 /* Persoon.swift in Sources */,
