@@ -13,8 +13,6 @@ class TableViewController: UITableViewController {
     var personenlijst = [Persoon]()
     
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -45,8 +43,6 @@ class TableViewController: UITableViewController {
         let coo6 = CLLocationCoordinate2D(latitude: 50.892116, longitude: 4.283380)
         let persoon6 = Persoon(naam: "Walravens", voornaam: "Annelies", foto: #imageLiteral(resourceName: "Annelies") , adres: adres6, coordinate: coo6, telefoon: "1234567890")
         
-        
-        //50.892116, 4.283380
         
         self.personenlijst += [persoon1]
         self.personenlijst += [persoon2]

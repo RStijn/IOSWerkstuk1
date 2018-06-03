@@ -65,7 +65,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="kJQ-r1-f21" appends="YES" id="HMz-vT-PL9"/>
+                                    <outletCollection property="gestureRecognizers" destination="vuf-wk-xaY" appends="YES" id="4lW-0i-fpZ"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -75,7 +75,7 @@
                     </view>
                     <connections>
                         <outlet property="achternaam" destination="nmz-Lp-nZT" id="ldt-6s-pja"/>
-                        <outlet property="foto" destination="XyO-tJ-7w8" id="3kC-7G-MAM"/>
+                        <outlet property="foto" destination="XyO-tJ-7w8" id="L50-s8-gaR"/>
                         <outlet property="gemeente" destination="PtN-6I-wAZ" id="SAN-PZ-fT1"/>
                         <outlet property="mapView" destination="pug-1V-ekV" id="Csm-zL-Uhf"/>
                         <outlet property="straat" destination="b03-af-nui" id="Quu-N2-ruc"/>
@@ -84,9 +84,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GKo-8X-OZ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="kJQ-r1-f21">
+                <tapGestureRecognizer id="vuf-wk-xaY">
                     <connections>
-                        <segue destination="8Uu-Hj-iPF" kind="show" id="3TI-MU-Yul"/>
+                        <segue destination="8Uu-Hj-iPF" kind="show" id="QkB-iN-MW7"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

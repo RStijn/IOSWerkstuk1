@@ -17,6 +17,7 @@ class ViewController:  UIViewController, MKMapViewDelegate, CLLocationManagerDel
     
     
 
+   
     @IBOutlet weak var foto: UIImageView!
     @IBOutlet weak var telefoonnummer: UILabel!
     @IBOutlet weak var achternaam: UILabel!
@@ -47,7 +48,7 @@ class ViewController:  UIViewController, MKMapViewDelegate, CLLocationManagerDel
         
         let annotation = Annotation(coordinate: location, title: (persoon?.voornaam)! + " " + (persoon?.naam)!)
         
-        //       self.map.addAnnotation(annotation)
+     
         self.mapView.addAnnotation(annotation)
      
         // Do any additional setup after loading the view, typically from a nib.

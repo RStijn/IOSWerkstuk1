@@ -39,6 +39,7 @@ class ViewControllerMaps: UIViewController, MKMapViewDelegate, CLLocationManager
      
     }
     
+    //vul de map met personen uit de lijst
     func vulMap(){
         for person in self.personen {
             let location = CLLocationCoordinate2D(latitude: person.coordinate.latitude, longitude: person.coordinate.longitude)
