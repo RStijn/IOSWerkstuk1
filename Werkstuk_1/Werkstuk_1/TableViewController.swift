@@ -12,6 +12,9 @@ class TableViewController: UITableViewController {
 
     var personenlijst = [Persoon]()
     
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,7 +26,7 @@ class TableViewController: UITableViewController {
         
         //var adres = Adres(straat: "viooltjeslaan", huisnummer: "8", )
         let adres1 = Adres(straat: "Viooltjeslaan", huisnummer: "8", postcode: "1770", gemeente: "Liedekerke")
-         let coo1 = CLLocationCoordinate2D(latitude: 50.844226, longitude: 4.327051)
+         let coo1 = CLLocationCoordinate2D(latitude: 50.857819, longitude: 4.112793)
         let persoon1 = Persoon(naam: "Rooselaers", voornaam: "Stijn", foto: #imageLiteral(resourceName: "Stijn")  , adres: adres1, coordinate: coo1, telefoon: "0478813696")
         
         let adres2 = Adres(straat: "Poelkveldstraat", huisnummer: "50", postcode: "1761", gemeente: "Pamel")
@@ -33,18 +36,28 @@ class TableViewController: UITableViewController {
         let coo3 = CLLocationCoordinate2D(latitude: 50.828771, longitude: 4.123909)
         let persoon3 = Persoon(naam: "Delcourt", voornaam: "Rhune", foto: #imageLiteral(resourceName: "Rhune")  , adres: adres3, coordinate: coo3, telefoon: "1234567890")
         let adres4 = Adres(straat: "Ergens tussen de appeltjes", huisnummer: "0", postcode: "idk de postcode,", gemeente: "Eizeringen")
-        let coo4 = CLLocationCoordinate2D(latitude: 50.828771, longitude: 4.123909)
+        let coo4 = CLLocationCoordinate2D(latitude: 50.816868, longitude: 4.133476)
         let persoon4 = Persoon(naam: "Van Der Meulen", voornaam: "Myrthe", foto: #imageLiteral(resourceName: "Myrthe")  , adres: adres4, coordinate: coo4, telefoon: "1234567890")
         let adres5 = Adres(straat: "Ergens in een straat aan de steenweg", huisnummer: "0", postcode: "idk de postcode,", gemeente: "Lennik")
-        let coo5 = CLLocationCoordinate2D(latitude: 50.828771, longitude: 4.123909)
+        let coo5 = CLLocationCoordinate2D(latitude: 50.836291, longitude: 4.161464)
         let persoon5 = Persoon(naam: "Bettens", voornaam: "Daria", foto: #imageLiteral(resourceName: "Daria")  , adres: adres5, coordinate: coo5, telefoon: "1234567890")
+        let adres6 = Adres(straat: "Serge Ecksteinlaan", huisnummer: "28", postcode: "1731,", gemeente: "Asse")
+        let coo6 = CLLocationCoordinate2D(latitude: 50.892116, longitude: 4.283380)
+        let persoon6 = Persoon(naam: "Walravens", voornaam: "Annelies", foto: #imageLiteral(resourceName: "Annelies") , adres: adres6, coordinate: coo6, telefoon: "1234567890")
         
+        
+        //50.892116, 4.283380
         
         self.personenlijst += [persoon1]
         self.personenlijst += [persoon2]
         self.personenlijst += [persoon3]
         self.personenlijst += [persoon4]
         self.personenlijst += [persoon5]
+        self.personenlijst += [persoon6]
+        
+        //https://forums.developer.apple.com/thread/87316
+        let mapsTab = self.tabBarController?.viewControllers![1] as! ViewControllerMaps
+        mapsTab.personen = self.personenlijst
         
     }
 

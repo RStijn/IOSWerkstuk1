@@ -4,6 +4,8 @@
 <dict>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>&quot;test&quot;</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Test</string>
 	<key>NSLocationUsageDescription</key>
 	<string>&quot;test&quot;</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>

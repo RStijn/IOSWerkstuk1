@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8D19ABEC20C07F770009BECB /* ViewControllerfoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19ABEB20C07F770009BECB /* ViewControllerfoto.swift */; };
+		8D5E20EB20C3D79B008E6D70 /* ViewControllerMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5E20EA20C3D79B008E6D70 /* ViewControllerMaps.swift */; };
+		8D5E20F120C3E9F8008E6D70 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5E20F020C3E9F8008E6D70 /* Annotation.swift */; };
+		8D5E20F420C3EC2A008E6D70 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5E20F320C3EC2A008E6D70 /* MapKit.framework */; };
 		8DC263AB20BFE11900CE34C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC263AA20BFE11900CE34C6 /* AppDelegate.swift */; };
 		8DC263AD20BFE11900CE34C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC263AC20BFE11900CE34C6 /* ViewController.swift */; };
 		8DC263B020BFE11900CE34C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DC263AE20BFE11900CE34C6 /* Main.storyboard */; };
@@ -39,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		8D19ABEB20C07F770009BECB /* ViewControllerfoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerfoto.swift; sourceTree = "<group>"; };
+		8D5E20EA20C3D79B008E6D70 /* ViewControllerMaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMaps.swift; sourceTree = "<group>"; };
+		8D5E20F020C3E9F8008E6D70 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		8D5E20F320C3EC2A008E6D70 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8DC263A720BFE11900CE34C6 /* Werkstuk_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Werkstuk_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC263AA20BFE11900CE34C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DC263AC20BFE11900CE34C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D5E20F420C3EC2A008E6D70 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D5E20F220C3EC2A008E6D70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D5E20F320C3EC2A008E6D70 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8DC2639E20BFE11900CE34C6 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +104,7 @@
 				8DC263BE20BFE11C00CE34C6 /* Werkstuk_1Tests */,
 				8DC263C920BFE11C00CE34C6 /* Werkstuk_1UITests */,
 				8DC263A820BFE11900CE34C6 /* Products */,
+				8D5E20F220C3EC2A008E6D70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,8 +121,8 @@
 		8DC263A920BFE11900CE34C6 /* Werkstuk_1 */ = {
 			isa = PBXGroup;
 			children = (
-				8DC263AA20BFE11900CE34C6 /* AppDelegate.swift */,
 				8DC263AC20BFE11900CE34C6 /* ViewController.swift */,
+				8DC263AA20BFE11900CE34C6 /* AppDelegate.swift */,
 				8DC263AE20BFE11900CE34C6 /* Main.storyboard */,
 				8DC263B120BFE11C00CE34C6 /* Assets.xcassets */,
 				8DC263B320BFE11C00CE34C6 /* LaunchScreen.storyboard */,
@@ -115,6 +131,8 @@
 				8DC263B620BFE11C00CE34C6 /* Info.plist */,
 				8DC263DE20BFE72D00CE34C6 /* TableViewController.swift */,
 				8D19ABEB20C07F770009BECB /* ViewControllerfoto.swift */,
+				8D5E20EA20C3D79B008E6D70 /* ViewControllerMaps.swift */,
+				8D5E20F020C3E9F8008E6D70 /* Annotation.swift */,
 			);
 			path = Werkstuk_1;
 			sourceTree = "<group>";
@@ -205,6 +223,11 @@
 				TargetAttributes = {
 					8DC263A620BFE11900CE34C6 = {
 						CreatedOnToolsVersion = 9.3.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					8DC263BA20BFE11C00CE34C6 = {
 						CreatedOnToolsVersion = 9.3.1;
@@ -270,9 +293,11 @@
 			files = (
 				8DC263AD20BFE11900CE34C6 /* ViewController.swift in Sources */,
 				8DC263DB20BFE30000CE34C6 /* Adres.swift in Sources */,
+				8D5E20EB20C3D79B008E6D70 /* ViewControllerMaps.swift in Sources */,
 				8D19ABEC20C07F770009BECB /* ViewControllerfoto.swift in Sources */,
 				8DC263AB20BFE11900CE34C6 /* AppDelegate.swift in Sources */,
 				8DC263DF20BFE72D00CE34C6 /* TableViewController.swift in Sources */,
+				8D5E20F120C3E9F8008E6D70 /* Annotation.swift in Sources */,
 				8DC263D920BFE27D00CE34C6 /* Persoon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -42,7 +42,12 @@ class ViewController:  UIViewController, MKMapViewDelegate, CLLocationManagerDel
         self.foto.image=persoon?.foto
        
         
-        self.mapView.addAnnotation(persoon!)
+        let location = CLLocationCoordinate2D(latitude: (persoon?.coordinate.latitude)!, longitude: (persoon?.coordinate.longitude)!)
+        
+        let annotation = Annotation(coordinate: location, title: (persoon?.voornaam)! + " " + (persoon?.naam)!)
+        
+        //       self.map.addAnnotation(annotation)
+        self.mapView.addAnnotation(annotation)
      
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -55,10 +60,10 @@ class ViewController:  UIViewController, MKMapViewDelegate, CLLocationManagerDel
    
     
     
-    func mapView(_mapView: MKMapView, didUpdate userlocation: MKUserLocation) {
-        let center = persoon?.coordinate
-        let region = MKCoordinateRegion(center: center!, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
-       
+    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
+        let center = CLLocationCoordinate2D(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
+        let span = MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
+        let region = MKCoordinateRegion(center: center, span: span)
         mapView.setRegion(region, animated: true)
         
     }
