@@ -13,6 +13,7 @@ class ViewControllerfoto: UIViewController {
     @IBOutlet weak var foto: UIImageView!
    
     override func viewDidLoad() {
+        print("test")
         super.viewDidLoad()
         self.foto.image=self.image
 

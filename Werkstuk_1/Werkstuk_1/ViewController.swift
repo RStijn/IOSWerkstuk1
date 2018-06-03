@@ -17,6 +17,7 @@ class ViewController:  UIViewController, MKMapViewDelegate, CLLocationManagerDel
     
     
 
+    @IBOutlet weak var foto: UIImageView!
     @IBOutlet weak var telefoonnummer: UILabel!
     @IBOutlet weak var achternaam: UILabel!
     @IBOutlet weak var gemeente: UILabel!
@@ -25,7 +26,7 @@ class ViewController:  UIViewController, MKMapViewDelegate, CLLocationManagerDel
   
     @IBOutlet weak var straat: UILabel!
     @IBOutlet weak var voornaam: UILabel!
-    @IBOutlet weak var foto: UIImageView!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
